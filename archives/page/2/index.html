@@ -135,6 +135,32 @@ classes that you can use:
 -------------------------------->
 
 <!-- add social info here -->
+<script type="text/javascript">
+		
+		function insert1(){
+			var insertText = "<li class='navigation__item'>"+
+				"<a href='tencent://message/?uin=357916010' title='QQ'>"+
+		          "<i class='icon cs-icon-qq'></i>"+
+				"<span class='label'>QQ</span>"
+				+"</a></li>"
+			document.getElementsByClassName("navigation").innerHTML=insertText;
+		}
+		function insert2(){
+			var insertText = "<li class='navigation__item'>"+
+				"<a href='mqqwpa://im/chat?chat_type=wpa&uin=357916010&version=1' title='QQ'>"+
+		          "<i class='icon cs-icon-qq'></i>"+
+				"<span class='label'>QQ</span>"
+				+"</a></li>"
+			document.getElementsByClassName("navigation").innerHTML = insertText;
+		}
+		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+				insert2();
+				alert('移动端');
+		} else {
+				insert1();
+		console.log('PC1端');    
+		}
+		</script>
 
 
 
@@ -152,16 +178,7 @@ classes that you can use:
     
 
     <!-- China social icon -->
-   
-	<!--
-      <li class="navigation__item">
-        <a href="" target="_blank" title="">
-          <i class='icon cs-icon-douban'></i>
-          <span class="label">Douban</span>
-        </a>
-      </li>
-	-->
-      <li class="navigation__item">
+   	  <li class="navigation__item">
         <a href="http://weibo.com/u/2335030450" target="_blank" title="Weibo">
           <i class='icon cs-icon-weibo'></i>
           <span class="label">Weibo</span>
@@ -182,34 +199,7 @@ classes that you can use:
         </a>
       </li>
 	  
-		<script type="text/javascript">
 		
-		function insert1(){
-			var insertText = "<li class='navigation__item'>"+
-				"<a href='tencent://message/?uin=357916010' title='QQ'>"+
-		          "<i class='icon cs-icon-qq'></i>"+
-				"<span class='label'>QQ</span>"
-				+"</a></li>"
-			document.getElementsByClassName("navigation").innerHTML=insertText;
-		}
-		function insert2(){
-			var insertText = "<li class='navigation__item'>"+
-				"<a href='mqqwpa://im/chat?chat_type=wpa&uin=357916010&version=1' title='QQ'>"+
-		          "<i class='icon cs-icon-qq'></i>"+
-				"<span class='label'>QQ</span>"
-				+"</a></li>"
-			document.getElementsByClassName("navigation").innerHTML = insertText;
-		}
-		alert("111111")
-		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-				insert2();
-				alert('客户端1');
-		} else {
-		alert('PC端');
-			insert1();
-		console.log('PC端');    
-		}
-		</script>
 		
 		<!--
 		<li class="navigation__item">
