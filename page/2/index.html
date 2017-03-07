@@ -185,11 +185,27 @@ classes that you can use:
         </a>
       </li>
 		<script type="text/javascript">
-			if(document.onclick){
-			alert(document)
-			alert("3333333333");
+		function IsPC() {
+			var userAgentInfo = navigator.userAgent;
+			var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+			var flag = true;
+			for (var v = 0; v < Agents.length; v++) {
+				if (userAgentInfo.indexOf(Agents[v]) > 0) {
+					flag = false;
+					break;
+				}
+			}
+			return flag;
+}
+ 
+			var flag = IsPC();
+			if(flag){
+			alert(document);
+			alert("this is PC");
 			}else{
-				alert("2222222222");
+				alert("This is phone");
 			}
 			
 			
