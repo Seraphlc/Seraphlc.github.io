@@ -198,17 +198,25 @@ classes that you can use:
 				}
 			}
 			return flag;
-}
+		}
  
 			var flag = IsPC();
-			if(!flag){
-			alert(document);
-			alert("this is PC");
+			if(flag){
+				<li class="navigation__item">
+				<a href="tencent://message/?uin=357916010" title="QQ">
+		          <i class='icon cs-icon-qq'></i>
+				<span class="label">QQ</span>
+			</a>
+			</li>
 			}else{
 				alert("This is phone");
-			}
-			
-			
+				<li class="navigation__item">
+				<a href="mqqwpa://im/chat?chat_type=wpa&uin=357916010&version=1" title="QQ">
+		          <i class='icon cs-icon-qq'></i>
+					<span class="label">QQ</span>
+				</a>
+				</li>
+			}		
 		</script>
 		<li class="navigation__item">
         <a href="tencent://message/?uin=357916010" title="QQ">
