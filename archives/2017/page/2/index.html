@@ -182,6 +182,7 @@ classes that you can use:
           <span class="label">Wechat</span>
         </a>
       </li>
+	  
 		<script type="text/javascript">
 		function IsPC() {
 			var userAgentInfo = navigator.userAgent;
@@ -199,8 +200,9 @@ classes that you can use:
 		}
  
 			var flag = IsPC();
+			alert("flag======="+flag)
 			if(flag){
-					alert("this is PC")
+				alert("this is PC")
 				<li class="navigation__item">
 				<a href="tencent://message/?uin=357916010" title="QQ">
 		          <i class='icon cs-icon-qq'></i>
@@ -217,6 +219,7 @@ classes that you can use:
 				</li>
 			}		
 		</script>
+		
 		<li class="navigation__item">
         <a href="tencent://message/?uin=357916010" title="QQ">
 		<!--<a href="mqqwpa://im/chat?chat_type=wpa&uin=357916010&version=1" title="QQ">-->
