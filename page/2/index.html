@@ -190,13 +190,18 @@ classes that you can use:
 				
 				alert('移动1');
 		} else {
+				var aBtn = document.getElementById("insert");
 				var Html="<li class='navigation__item'>"+
 					"<a href='tencent://message/?uin=357916010' title='QQ'>"+
 					"<i class='icon cs-icon-qq'></i>"+
 					"<span class='label'>QQ</span>"
 					+"</a></li>";
-			
-			Document.getElementById("insert").innerHtml = Html;
+			if(!aBtn.onclik){
+				console.log("pc");
+			}else{
+				console.log("yidong");
+			}
+			aBtn.getElementById("insert").innerHtml = Html;
 				console.error("0111111111");
 	
 		}
