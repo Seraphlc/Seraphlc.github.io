@@ -142,30 +142,7 @@ classes that you can use:
 <nav class="cover-navigation navigation--social">
   <ul id="insert" class="navigation">
   
-	<script type="text/javascript">
-		
-		function insert1(){
-		
-			var insertText = "<li class='navigation__item'>"+
-				"<a href='tencent://message/?uin=357916010' title='QQ'>"+
-		          "<i class='icon cs-icon-qq'></i>"+
-				"<span class='label'>QQ</span>"
-				+"</a></li>"
-				console.log("33333333333333333333");
-				console.error("------"+document.getElementById("insert"));
-				console.error("------"+document.getClassName("navigation"));
-			document.getElementById("insert").innerHTML = insertText;
-			console.log("8");
-		}
-		
-		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-				<!--insert2();-->
-				alert('移动端');
-		} else {
-				insert1();
-		console.log('PC1端');    
-		}
-		</script>
+	
 		
     
       <!-- Github -->
@@ -178,6 +155,7 @@ classes that you can use:
     
 
     <!-- China social icon -->
+	
    	  <li class="navigation__item">
         <a href="http://weibo.com/u/2335030450" target="_blank" title="Weibo">
           <i class='icon cs-icon-weibo'></i>
@@ -198,7 +176,30 @@ classes that you can use:
           <span class="label">Wechat</span>
         </a>
       </li>
-	  
+	  <script type="text/javascript">
+		
+		function insert1(){
+		
+			var insertText = "<li class='navigation__item'>"+
+				"<a href='tencent://message/?uin=357916010' title='QQ'>"+
+		          "<i class='icon cs-icon-qq'></i>"+
+				"<span class='label'>QQ</span>"
+				+"</a></li>"
+				console.log("33333333333333333333");
+				console.error("------"+document.getElementById("insert"));
+				
+			document.getElementById("insert").innerHTML = insertText;
+			console.log("8");
+		}
+		
+		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+				<!--insert2();-->
+				alert('移动端');
+		} else {
+				insert1();
+		console.log('PC1端');    
+		}
+		</script>
 		
 		
 		<!--
