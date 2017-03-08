@@ -159,7 +159,26 @@ classes that you can use:
 
     <!-- China social icon -->
 	
-   	
+   	  <li class="navigation__item">
+        <a href="http://weibo.com/u/2335030450" target="_blank" title="Weibo">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+	  <li class="navigation__item">
+        <a href="mailto:13289207031@163.com" title="需要下载邮箱客户端">
+          <i class='icon icon-mail'></i>
+          <span class="label">Mail</span>
+        </a>
+      </li>
+		
+	  <li class="navigation__item">
+        <a href="#" onclick="javascript:window.open('../images/wechat.jpg','','height=500,width=500,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no')"
+		target="_blank" title="wechat">
+          <i class='icon cs-icon-wechat'></i>
+          <span class="label">Wechat</span>
+        </a>
+      </li>
 	  
 		
 	<script type="text/javascript">
@@ -180,50 +199,9 @@ classes that you can use:
 					+"</a></li>";
 					console.log(aBtn);		
 		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-				  <li class="navigation__item">
-        <a href="http://weibo.com/u/2335030450" target="_blank" title="Weibo">
-          <i class='icon cs-icon-weibo'></i>
-          <span class="label">Weibo</span>
-        </a>
-      </li>
-	  <li class="navigation__item">
-        <a href="mailto:13289207031@163.com" title="需要下载邮箱客户端">
-          <i class='icon icon-mail'></i>
-          <span class="label">Mail</span>
-        </a>
-      </li>
-		
-	  <li class="navigation__item">
-        <a href="#" onclick="javascript:window.open('../images/wechat.jpg','','height=500,width=500,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no')"
-		target="_blank" title="wechat">
-          <i class='icon cs-icon-wechat'></i>
-          <span class="label">Wechat</span>
-        </a>
-      </li>
-				
 				aBtn.innerHTML = Text;
 				console.log("移动端");
 		} else {
-		  <li class="navigation__item">
-        <a href="http://weibo.com/u/2335030450" target="_blank" title="Weibo">
-          <i class='icon cs-icon-weibo'></i>
-          <span class="label">Weibo</span>
-        </a>
-      </li>
-	  <li class="navigation__item">
-        <a href="mailto:13289207031@163.com" title="需要下载邮箱客户端">
-          <i class='icon icon-mail'></i>
-          <span class="label">Mail</span>
-        </a>
-      </li>
-		
-	  <li class="navigation__item">
-        <a href="#" onclick="javascript:window.open('../images/wechat.jpg','','height=500,width=500,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no')"
-		target="_blank" title="wechat">
-          <i class='icon cs-icon-wechat'></i>
-          <span class="label">Wechat</span>
-        </a>
-      </li>
 				aBtn.innerHTML = Html;
 				console.log("PC端");
 			}
