@@ -146,12 +146,37 @@ classes that you can use:
 <nav class="cover-navigation navigation--social">
   <ul id="insert" class="navigation">
   
-	
+	<script type="text/javascript">
+		
+		window.onload = function insert1(){
+		
+			var aBtn = document.getElementById("insert");
+				var Html="<li class='navigation__item'>"+
+					"<a href='tencent://message/?uin=357916010' title='QQ'>"+
+					"<i class='icon cs-icon-qq'></i>"+
+					"<span class='label'>QQ</span>"
+					+"</a></li>";
+					
+				var Text = "<li class='navigation__item'>"+
+					"<a href='mqqwpa://im/chat?chat_type=wpa&uin=357916010&version=1' title='QQ'>"+
+					"<i class='icon cs-icon-qq'></i>"+
+					"<span class='label'>QQ</span>"
+					+"</a></li>";
+					alert(aBtn);		
+		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+				aBtn.innerHTML = Html;
+				console.log("移动");
+		} else {
+				aBtn.innerHTML = Text;
+				console.log("PC");
+			}
+		}
+		</script>
 		
     
       <!-- Github -->
       <li class="navigation__item">
-        <a href="https://github.com/Seraphlc" target="_blank" title="Seraphlc on GitHub">
+        <a href="https://github.com/Seraphlc" title="Huno on GitHub">
           <i class='icon icon-social-github'></i>
           <span class="label">GitHub</span>
         </a>
@@ -166,10 +191,6 @@ classes that you can use:
           <span class="label">Weibo</span>
         </a>
       </li>
-	  
-	    
-	  
-	  
 	  <li class="navigation__item">
         <a href="mailto:13289207031@163.com" title="需要下载邮箱客户端">
           <i class='icon icon-mail'></i>
@@ -184,49 +205,21 @@ classes that you can use:
           <span class="label">Wechat</span>
         </a>
       </li>
-	
-	<script type="text/javascript">
-		function Judge(){
-			var aBtn = document.getElementById("insert");
-				var Html="<li class='navigation__item'>"+
-					"<a href='tencent://message/?uin=357916010' title='QQ'>"+
-					"<i class='icon cs-icon-qq'></i>"+
-					"<span class='label'>QQ</span>"
-					+"</a></li>";
-				var Text = "<li class='navigation__item'>"+
-					"<a href='mqqwpa://im/chat?chat_type=wpa&uin=357916010&version=1' title='QQ'>"+
-					"<i class='icon cs-icon-qq'></i>"+
-					"<span class='label'>QQ</span>"
-					+"</a></li>";
-					alert(aBtn);
-			if(aBtn.onclick){
-				alert(aBtn.ontouch);
-				console.log(aBtn.innerHtml);
-				console.log("PC");
-			}else{
-			alert(aBtn.ontouch);
-				console.log(aBtn.innerHtml);
-				aBtn.innerHtml = 2222222222;
-				console.log("移动端de ");
-			}
-		}
-		Judge();
-		</script>
+	  
 		
-<!--		
+		
+		<!--
 		<li class="navigation__item">
-		<a href="tencent://message/?uin=357916010" title="QQ">
-		 <a href="mqqwpa://im/chat?chat_type=wpa&uin=357916010&version=1" title="QQ">
+        <a href="tencent://message/?uin=357916010" title="QQ">
+		<a href="mqqwpa://im/chat?chat_type=wpa&uin=357916010&version=1" title="QQ">
 		          <i class='icon cs-icon-qq'></i>
           <span class="label">QQ</span>
         </a>
 		</li>
--->	
+		-->
 
   </ul>
-  </nav>
-
-
+</nav>
 
 
 
