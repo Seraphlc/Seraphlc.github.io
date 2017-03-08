@@ -184,7 +184,8 @@ classes that you can use:
       </li>
 	
 	<script type="text/javascript">
-		var aBtn = document.getElementById("insert");
+		function Judge(){
+			var aBtn = document.getElementById("insert");
 				var Html="<li class='navigation__item'>"+
 					"<a href='tencent://message/?uin=357916010' title='QQ'>"+
 					"<i class='icon cs-icon-qq'></i>"+
@@ -202,6 +203,8 @@ classes that you can use:
 				aBtn.innerHtml = Text;
 				console.log("移动");
 			}
+		}
+		Judge();
 		</script>
 		
 <!--		
