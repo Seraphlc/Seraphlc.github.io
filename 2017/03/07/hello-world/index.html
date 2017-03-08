@@ -146,33 +146,7 @@ classes that you can use:
 <nav class="cover-navigation navigation--social">
   <ul id="insert" class="navigation">
   
-	<script type="text/javascript">
-		
-		window.onload = function insert1(){
-		
-			var aBtn = document.getElementById("insert");
-				var Html="<li class='navigation__item'>"+
-					"<a href='tencent://message/?uin=357916010' title='QQ'>"+
-					"<i class='icon cs-icon-qq'></i>"+
-					"<span class='label'>QQ</span>"
-					+"</a></li>";
-					
-				var Text = "<li class='navigation__item'>"+
-					"<a href='mqqwpa://im/chat?chat_type=wpa&uin=357916010&version=1' title='QQ'>"+
-					"<i class='icon cs-icon-qq'></i>"+
-					"<span class='label'>QQ</span>"
-					+"</a></li>";
-					alert(aBtn);		
-		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-				aBtn.innerHTML = Text;
-				console.log("移动端");
-		} else {
-				aBtn.innerHTML = Html;
-				console.log("PC端");
-			}
-		}
-		</script>
-		
+	
     
       <!-- Github -->
       <li class="navigation__item">
@@ -207,17 +181,33 @@ classes that you can use:
       </li>
 	  
 		
+	<script type="text/javascript">
 		
-		<!--
-		<li class="navigation__item">
-        <a href="tencent://message/?uin=357916010" title="QQ">
-		<a href="mqqwpa://im/chat?chat_type=wpa&uin=357916010&version=1" title="QQ">
-		          <i class='icon cs-icon-qq'></i>
-          <span class="label">QQ</span>
-        </a>
-		</li>
-		-->
-
+		window.onload = function insert1(){
+		
+			var aBtn = document.getElementById("insert");
+				var Html="<li class='navigation__item'>"+
+					"<a href='tencent://message/?uin=357916010' title='QQ'>"+
+					"<i class='icon cs-icon-qq'></i>"+
+					"<span class='label'>QQ</span>"
+					+"</a></li>";
+					
+				var Text = "<li class='navigation__item'>"+
+					"<a href='mqqwpa://im/chat?chat_type=wpa&uin=357916010&version=1' title='QQ'>"+
+					"<i class='icon cs-icon-qq'></i>"+
+					"<span class='label'>QQ</span>"
+					+"</a></li>";
+					alert(aBtn);		
+		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+				aBtn.innerHTML = Text;
+				console.log("移动端");
+		} else {
+				aBtn.innerHTML = Html;
+				console.log("PC端");
+			}
+		}
+		</script>
+		
   </ul>
 </nav>
 
