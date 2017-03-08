@@ -199,11 +199,12 @@ classes that you can use:
 		
 		function insert1(){
 		console.error("1111100000");
-			document.getElementById("insert").append("<li class='navigation__item'>"+
+		var Html="<li class='navigation__item'>"+
 				"<a href='tencent://message/?uin=357916010' title='QQ'>"+
 		          "<i class='icon cs-icon-qq'></i>"+
 				"<span class='label'>QQ</span>"
-				+"</a></li>");
+				+"</a></li>";
+			document.getElementById("insert").append(Html);
 				console.error("111111111");
 				}
 		
