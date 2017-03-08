@@ -198,12 +198,15 @@ classes that you can use:
 					"<i class='icon cs-icon-qq'></i>"+
 					"<span class='label'>QQ</span>"
 					+"</a></li>";
+					alert(aBtn);
 			if(aBtn.onclick){
 				alert(aBtn.ontouch);
 				console.log(aBtn.innerHtml);
 				console.log("PC");
 			}else{
-				aBtn.innerHtml = "2222222222";
+			alert(aBtn.ontouch);
+				console.log(aBtn.innerHtml);
+				aBtn.innerHtml = 2222222222;
 				console.log("移动端de ");
 			}
 		}
