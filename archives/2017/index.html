@@ -181,31 +181,27 @@ classes that you can use:
         </a>
       </li>
 	
-		  <script type="text/javascript">
-		
-		
-		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-				
-				alert('移动1');
-		} else {
-				var aBtn = document.getElementById("insert");
+	<script type="text/javascript">
+		var aBtn = document.getElementById("insert");
 				var Html="<li class='navigation__item'>"+
 					"<a href='tencent://message/?uin=357916010' title='QQ'>"+
 					"<i class='icon cs-icon-qq'></i>"+
 					"<span class='label'>QQ</span>"
 					+"</a></li>";
+				var Text = "<li class='navigation__item'>"+
+					"<a href='mqqwpa://im/chat?chat_type=wpa&uin=357916010&version=1' title='QQ'>"+
+					"<i class='icon cs-icon-qq'></i>"+
+					"<span class='label'>QQ</span>"
+					+"</a></li>";
 			if(!aBtn.onclik){
+				aBtn.innerHtml = Html;
 				console.log("pc");
 			}else{
+				aBtn.innerHtml = Text;
 				console.log("yidong");
 			}
-			aBtn.innerHtml = Html;
-				console.error("0111111111");
-	
-		}
 		</script>
-		
-		
+			
 		<li class="navigation__item">
 		<a href="tencent://message/?uin=357916010" title="QQ">
 		 <!-- <a href="mqqwpa://im/chat?chat_type=wpa&uin=357916010&version=1" title="QQ">-->
@@ -215,7 +211,8 @@ classes that you can use:
 		</li>
 		
 
-  </ul></nav>
+  </ul>
+  </nav>
 
 
 
